@@ -9,4 +9,3 @@ def lacked():
 
 print(lacked())
 
-        
