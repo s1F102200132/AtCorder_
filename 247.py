@@ -1,10 +1,13 @@
-def slime():
-    A,B,K = map(int,input().split())
-    num = A
-    result = 0
-    while not (num >= B):
-        result += 1
-        num *= K
-    return result
-print(slime())
+A,B = map(int,input().split())
+C,D = map(int,input().split())
+E,F = map(int,input().split())
+
+
+a = abs(A-C)
+b = abs(B-D)
+x = E-a
+y = F-b
+
+print(x,y)
+
 
