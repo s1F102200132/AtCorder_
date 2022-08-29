@@ -1,19 +1,16 @@
-def solve(a, b, c, x):
-  q = x // (a + c)
-  r = x % (a + c);
-  return (q * a + min(a, r)) * b;
-
-a, b, c, d, e, f, x = map(int, input().split())
-
-takahashi = solve(a, b, c, x)
-aoki = solve(d, e, f, x)
-
-if takahashi > aoki:
-  print("Takahashi")
-elif takahashi < aoki:
-  print("Aoki")
+a,b,c,d = map(int,input().split())
+if a < c:
+    print('Takahashi')
+elif a > c:
+    print('Aoki')
 else:
-  print("Draw")
+    if b < d:
+        print('Takahashi')
+    elif b > d:
+        print('Aoki')
+    else:
+        print('Takahashi')
+
 
 
 
