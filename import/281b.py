@@ -2,18 +2,18 @@
 #S = input()
 #print("Yes" if re.match(r"^[A-Z][1-9][0-9]{5}[A-Z]$", S) else "No")s = input()
 s = input()
-flag = False
  
-if len(s) == 8:
-  flag = True
-  if s[0] < 'A' or 'Z' < s[0]:
+flag = True
+if len(s) != 8:
     flag = False
-  if s[7] < 'A' or 'Z' < s[7]:
+if s[0].isalpha() == False or s[0] != s[0].upper():
     flag = False
-  if s[1] < '1' or '9' < s[1]:
+if s[-1].isalpha() == False or s[-1] != s[-1].upper():
     flag = False
-  for c in s[2:7]:
-    if c < '0'or '9' < c:
-      flag = False
-      
+v = s[1:-1]
+if v.isdigit() == False:
+    flag = False
+else:
+    if int(v) < 100000 or 999999 < int(v):
+        flag = False
 print('Yes' if flag else 'No')
