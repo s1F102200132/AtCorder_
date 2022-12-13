@@ -13,7 +13,6 @@ if s[-1].isalpha() == False or s[-1] != s[-1].upper():
 v = s[1:-1]
 if v.isdigit() == False:
     flag = False
-else:
-    if int(v) < 100000 or 999999 < int(v):
-        flag = False
+elif int(v) < 100000 or 999999 < int(v):
+    flag = False
 print('Yes' if flag else 'No')
