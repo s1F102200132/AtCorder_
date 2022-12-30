@@ -1,5 +1,14 @@
 n = int(input())
-a = list(map(int, input().split()))
-for i in range(n-1, 0, -1):
-  a[i] -= a[i-1]
-print(*a)
+ 
+s = []
+ 
+s =list(map(int, input().split()))
+    
+ans = []
+ans.append(s[0])
+for i in range(n-1):
+    p = s[i+1] - s[i]
+    ans.append(p)
+ 
+for i in range(n):
+    print(ans[i], end= ' ')
