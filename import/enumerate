@@ -4,3 +4,10 @@ for i, name in enumerate(l):
 # 0 Alice
 # 1 Bob
 # 2 Charlie
+
+#1から始める場合
+#for i, name in enumerate(l, 1):
+    #print(i, name)
+# 1 Alice
+# 2 Bob
+# 3 Charlie
