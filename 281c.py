@@ -1,13 +1,14 @@
 N,T = map(int,input().split())
 A = list(map(int,input().split()))
-time = 0
+total_time = sum(A)
+diff = T % total_time
 
-while time <= T:
-    for i in range(N):
-        time += A[i]
-        if time >= T:
-            break
-print(i+1,time-T)
+for i, ai in enumerate(A):
+    if diff < ai:
+        print(i + 1,diff)
+        exit()
+    else:
+        diff -= ai
             
     
 
