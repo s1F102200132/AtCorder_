@@ -1,10 +1,12 @@
 N = int(input())
-S = list(str(input()))
-l = 0
-for i in range(N-1):
-    if S[i] != S[i+1]:
-        l += 1
-print(l)
-
-
-
+S = input()
+ 
+for i in range(1, N):
+  flag = True
+  for k in range(N-i):
+    if S[k] == S[k+i]:
+      print(k)
+      flag = False
+      break
+  if flag:
+    print(N-i)
