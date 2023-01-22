@@ -1,3 +1,4 @@
+#ムズイ
 N = int(input())
 S = input()
  
