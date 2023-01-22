@@ -1,7 +1,6 @@
-N,P,Q,R,S = map(int,input().split())
-A = list(map(int,input().split()))
-for i in range(P,Q+1):
-    A[i-1],A[R-P+i-1]=A[R-P+i-1],A[i-1]
+N, P, Q, R, S = map(int, input().split())
+
+A = list(map(int, input().split()))
+A[P - 1 : Q], A[R - 1 : S] = A[R - 1 : S], A[P - 1 : Q]
+
 print(*A)
-
-
