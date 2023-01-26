@@ -16,7 +16,7 @@ print(f'left  : {s:*<8}')
 
 i = 1234567890
 print(f'comma: {i:,}')
-
+#comma: 1,234,567,890
 f = 0.123
 print(f'percent: {f:.2%}')
 # percent: 12.30%
