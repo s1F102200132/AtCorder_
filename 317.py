@@ -5,5 +5,5 @@ for n in range(N):
         print(n+1)
         exit(0)
 
-    
+print(P)  
 
